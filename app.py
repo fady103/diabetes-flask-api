@@ -4,7 +4,6 @@ import numpy as np
 
 app = Flask(__name__)
 
-# تحميل النموذج باستخدام joblib
 model = joblib.load("final_model_ready.joblib")
 
 @app.route('/predict', methods=['POST'])
